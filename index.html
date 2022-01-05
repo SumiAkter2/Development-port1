@@ -25,7 +25,7 @@
             color: purple;
         }
 
-        section {
+        .flexible-contain {
             display: flex;
             margin: 100px;
         }
@@ -33,6 +33,21 @@
         .half-width {
             width: 50%;
             padding-left: 4%;
+        }
+
+        .exprerience-item {
+            width: 40%;
+            box-shadow: 10px 10px 60px purple;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-left: 20px;
+            border-radius: 10px;
+        }
+
+        .exprerience-area {
+            background-image: url(images/exp-bg.png);
+            background-repeat: no-repeat;
+            background-position: left;
         }
 
         .half-width img {
@@ -57,12 +72,28 @@
             background-repeat: no-repeat;
             background-position: right;
         }
+
+        #web-dev {
+            border-left: 10px solid;
+            border-image: linear-gradient(red, purple);
+            border-image-slice: 1;
+        }
+
+        #web {
+            border-left: 10px solid;
+            border-image: linear-gradient(purple, yellow);
+            border-image-slice: 1;
+        }
+
+        footer p {
+            text-align: center;
+        }
     </style>
 
 </head>
 
 <body>
-    <section class="bannar">
+    <section class="bannar flexible-contain">
         <div class="half-width">
             <h1>Welcome To</h1>
             <h1> <span class="purple-color">Rasheduzzaman</span> World!</h1>
@@ -76,7 +107,7 @@
             <img src="my-bg.png" alt="Rasheduzzaman">
         </div>
     </section>
-    <section class="dream">
+    <section class="dream flexible-contain">
 
         <div class="half-width">
             <img src="my-bg2.png" alt="abc">
@@ -95,6 +126,35 @@
 
     </section>
 
+    <section class="exprerience-area">
+        <h1>Expreriences</h1>
+        <div class="flexible-contain">
+            <div id="web-dev" class="exprerience-item">
+                <h2>Full stack developer</h2>
+                <h3 class="purple-color">2022-present | prolevel developer</h3>
+                <p> He is a medical student. He is a very good person. He always wants to help the people.He is a
+                    medical
+                    student. He is a very good person. He always wants to help the people.He is a medical student. He is
+                    a
+                    very good person>
+                </p>
+            </div>
+            <div id="web" class="exprerience-item">
+                <h2>Beginner developer</h2>
+                <h3 class="purple-color">2021-present|End</h3>
+                <p> He is a medical student. He is a very good person. He always wants to help the people.He is a
+                    medical
+                    student. He is a very good person. He always wants to help the people.He is a medical student. He is
+                    a
+                    very good person>
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Rasheduzzan World 2022, a medical seince initiative.</p>
+    </footer>
 </body>
 
 </html>
